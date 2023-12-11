@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import * as XLSX from 'xlsx';
 import { format } from 'date-fns';
 import { RightCorner } from "./styledComponents/StyledComponents";
-import Card from "./Card";
+import CardReadExcel from "./CardReadExcel";
 import { Upload } from "./styledComponents/StyledComponents";
 
 export default function GetUserData() {
@@ -66,7 +66,7 @@ export default function GetUserData() {
                     onChange={handleFileChange} 
                 />
             </RightCorner>
-            { userData && <Card userData={userData} />}
+            { userData && <CardReadExcel userData={userData} />}
         </>
       )
 };

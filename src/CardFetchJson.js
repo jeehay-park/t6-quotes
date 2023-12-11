@@ -17,7 +17,6 @@ import bg13 from "../src/bg/bg13.jpeg"
 import bg14 from "../src/bg/bg14.jpeg"
 import bg15 from "../src/bg/bg15.jpeg"
 
-
 export default function Card({userData}) {
 
     const images = [bg0, bg1, bg2, bg3, bg4, bg5, bg6, bg7, bg8, bg9, bg10, bg11, bg12, bg13, bg14, bg15];
@@ -34,12 +33,19 @@ export default function Card({userData}) {
         setNum(randomNum);
 
     }
+
+    console.log("UserData : ")
+    console.log(userData)
+    console.log("userData[0]", userData[0]?.quote)
+    console.log("userData[0]", userData[0]?.author)
+    
+
    
     return(
         <>
             <CenterWrapper>
                 <QuoteBox>
-                    <h1 style={{width : '350px', height : '450px', padding : '0.5rem 0.5rem'}}>{userData[index]?.quote}</h1>
+                    <h1 style={{width : '350px', height : '300px', padding : '0.5rem 0.5rem'}}>{userData[index]?.quote}</h1>
                     <p style={{width : '350px', height : '30px', padding : '1rem 0.5rem'}}>{userData[index]?.author}</p>
                     { userData[index]?.quote && <div style={{width : '350px', height : '200px', padding : '0 0.5rem'}}>
                         <img src={images[num]} style={{width : '350px', height : '200px'}} alt="positive-images"/>
