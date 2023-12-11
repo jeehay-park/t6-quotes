@@ -60,7 +60,9 @@ export default function GetUserData() {
         <>
             <RightCorner>
                 <Upload 
+                    id="fileInput"
                     type="file" 
+                    accept=".xlsx, .xls" 
                     onChange={handleFileChange} 
                 />
             </RightCorner>
