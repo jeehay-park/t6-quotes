@@ -59,6 +59,7 @@ export default function GetUserData() {
       return(
         <>
             <RightCorner>
+                <label htmlFor="fileInput">Choose an Excel File:</label>
                 <Upload 
                     id="fileInput"
                     type="file" 
