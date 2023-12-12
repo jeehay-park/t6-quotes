@@ -53,15 +53,13 @@ export default function Card({userData}) {
                     }
                     
                 </QuoteBox>
-                <div style={{textAlign : 'center', margin : '1rem 1rem'}}>
+                <div style={{textAlign : 'center', margin : '0.5rem auto'}}>
 
                 <Button
                     onClick={handleRefresh}>Get another quote!
                 </Button>
                 </div>
              
-                
-                
             </CenterWrapper>
             
         </>

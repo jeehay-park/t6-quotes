@@ -24,7 +24,7 @@ export const RightCorner = styled.div`
 export const QuoteBox = styled.div`
 
     border : 1px solid #397a4c;
-    padding : 1rem 1rem;
+    padding : 0.5rem auto;
     dispaly : flex;
     flex-direction: column;
     justify-content : space-around;
