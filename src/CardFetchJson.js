@@ -45,9 +45,10 @@ export default function Card({userData}) {
         <>
             <CenterWrapper>
                 <QuoteBox>
-                    <h1 style={{width : '350px', height : '300px', padding : '0.5rem 0.5rem'}}>{userData[index]?.quote}</h1>
-                    <p style={{width : '350px', height : '30px', padding : '1rem 0.5rem'}}>{userData[index]?.author}</p>
-                    { userData[index]?.quote && <div style={{width : '350px', height : '200px', padding : '0 0.5rem'}}>
+                    <h1 style={{width : '350px', height : '350px', padding : '1px 10px'}}>{userData[index]?.quote}</h1>
+                    <p style={{width : '350px', height : '10px', padding : '1px 10px'}}>{userData[index]?.author}</p>
+                    { userData[index]?.quote && 
+                    <div style={{width : '350px', height : '200px', padding : '10px 10px'}}>
                         <img src={images[num]} style={{width : '350px', height : '200px'}} alt="positive-images"/>
                     </div>
                     }
