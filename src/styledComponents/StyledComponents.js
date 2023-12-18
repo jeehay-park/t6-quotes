@@ -6,6 +6,7 @@ export const CenterWrapper = styled.div`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);  
+    color : #3b3b3b;
    
     
 `
@@ -23,7 +24,7 @@ export const RightCorner = styled.div`
 
 export const QuoteBox = styled.div`
 
-    border : 1px solid #397a4c;
+    // border : 1px solid #397a4c;
     padding : 0.5rem auto;
     dispaly : flex;
     flex-direction: column;
@@ -34,9 +35,9 @@ export const QuoteBox = styled.div`
 export const Button = styled.button`
 
     padding : 0.5rem 0.5rem;
-    border : 1px solid #397a4c;
+    border : 1px solid #3b3b3b;
     background-color : white;
-    color : #397a4c;
+    color : #3b3b3b;
     font-weight :  bold;
     border-radius : 0.5rem;
     cursor : pointer;

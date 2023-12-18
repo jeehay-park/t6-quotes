@@ -48,8 +48,9 @@ export default function Card({userData}) {
                 <QuoteBox>
                     <h1 style={{width : '350px', height : '430px', padding : '0.5rem 0.5rem'}}>{userData[index]?.quote}</h1>
                     <p style={{width : '350px', height : '20px', padding : '1rem 0.5rem'}}>{userData[index]?.author}</p>
-                    { userData[index]?.quote && <div style={{width : '350px', height : '200px', padding : '0 0.5rem'}}>
-                        <img src={images[num]} style={{width : '350px', height : '200px'}} alt="positive-images"/>
+                    { userData[index]?.quote && 
+                    <div style={{width : '350px', height : '200px', padding : '0 0.5rem', border : '1px solid red'}}>
+                        {/* <img src={images[num]} style={{width : '350px', height : '200px'}} alt="positive-images"/> */}
                     </div>
                     }
                     
